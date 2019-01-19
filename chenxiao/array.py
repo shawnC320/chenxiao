@@ -7,7 +7,7 @@ class Stack(object):
         self.array1 = []
         self.array2 = []
         
-    # 依据下标奇偶将数组分为两个栈 array[0] array[1]
+    # 依据下标奇偶将数组分为两个栈 array1 array2
     def divArray(self):
         for i in range(len(self.array), 2):
             self.array1.append(i)
@@ -16,7 +16,7 @@ class Stack(object):
             
     # 左侧删除 弹出
     def l_pop(self):
-        # 判断array[0]是否为空
+        # 判断array1是否为空
         if len(self.array1) == 0:
             print('Stack array1 is empty')
         else:
@@ -28,7 +28,7 @@ class Stack(object):
  
     # 右侧删除 弹出
     def r_pop(self):
-        # 判断array[1]是否为空
+        # 判断array2是否为空
         if len(self.array2) == 0:
             print('Stack array2 is empty')
         else:
