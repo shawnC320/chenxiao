@@ -2,7 +2,7 @@ class Stack(object):
 
 
     # 构建数组
-    def __init__(self):
+    def __init__(self, data):
         self.array = []
         self.array1 = []
         self.array2 = []
